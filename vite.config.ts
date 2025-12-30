@@ -6,6 +6,9 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
         base: '/ICPC-Tanta-Community-TEST/',
+        build: {
+          outDir: 'docs',
+        },
         server: {
             port: 3000,
             host: "0.0.0.0",
