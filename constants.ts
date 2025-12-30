@@ -57,9 +57,9 @@ export const ROADMAP_MATERIALS: RoadmapItem[] = [
 ];
 
 export const SPONSORS: Sponsor[] = [
-    { id: 1, name: "Focus Zone", logo: "./Sponsers/FocusZone.png" },
-    { id: 2, name: "WOCM Workspace", logo: "./Sponsers/OCM.png" },
-    {  id: 3, name: "Watchly", logo: "./Sponsers/Watchly.png", },
+    { id: 1, name: "Focus Zone", logo: "./public/images/FocusZone.png" },
+    { id: 2, name: "OCM Workspace", logo: "./public/images/OCM.png" },
+    {  id: 3, name: "Watchly", logo: "/public/images/Watchly.png", },
 ];
 
 export const NAV_LINKS = [

@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 flex items-center">
             <img 
-              src="./logo.png" 
+              src="/public/images/logo.png" 
               alt="ICPC Tanta Community" 
               className="h-12 md:h-14 w-auto object-contain"
             />
