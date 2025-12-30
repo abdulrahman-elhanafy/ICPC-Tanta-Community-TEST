@@ -3,6 +3,7 @@ import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
 import { Menu, X, Facebook, Linkedin, Mail } from 'lucide-react';
 import { NAV_LINKS } from '../constants';
 import { Button } from './UI';
+import logo from '../public/images/logo.png';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex-shrink-0 flex items-center">
             <img 
-              src="/public/images/logo.png" 
+              src={logo} 
               alt="ICPC Tanta Community" 
               className="h-12 md:h-14 w-auto object-contain"
             />
@@ -90,7 +91,7 @@ export const Footer: React.FC = () => {
                   <div className="col-span-1 md:col-span-1">
                       <Link to="/" className="flex items-center gap-2 mb-4">
                           <img
-                              src="./logo.png"
+                              src={logo}
                               alt="ICPC Tanta Community"
                               className="h-12 w-auto object-contain"
                           />

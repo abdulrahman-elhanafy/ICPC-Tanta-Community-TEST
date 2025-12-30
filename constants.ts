@@ -1,4 +1,7 @@
 import { TeamMember, Event, RoadmapItem, Sponsor } from './types';
+import Sponser1 from './public/images/FocusZone.png';
+import Sponser2 from './public/images/OCM.png';
+import Sponser3 from './public/images/Watchly.png';
 
 // Generate 30 mock team members
 export const TEAM_MEMBERS: TeamMember[] = Array.from({ length: 30 }, (_, i) => {
@@ -57,9 +60,9 @@ export const ROADMAP_MATERIALS: RoadmapItem[] = [
 ];
 
 export const SPONSORS: Sponsor[] = [
-    { id: 1, name: "Focus Zone", logo: "./public/images/FocusZone.png" },
-    { id: 2, name: "OCM Workspace", logo: "./public/images/OCM.png" },
-    {  id: 3, name: "Watchly", logo: "/public/images/Watchly.png", },
+    { id: 1, name: "Focus Zone", logo: Sponser1},
+    { id: 2, name: "OCM Workspace", logo: Sponser2 },
+    {  id: 3, name: "Watchly", logo: Sponser3 },
 ];
 
 export const NAV_LINKS = [
