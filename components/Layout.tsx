@@ -84,71 +84,136 @@ export const Navbar: React.FC = () => {
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          <div className="col-span-1 md:col-span-1">
-             <Link to="/" className="flex items-center gap-2 mb-4">
-                <img 
-                  src="./logo.png" 
-                  alt="ICPC Tanta Community" 
-                  className="h-12 w-auto object-contain"
-                />
-            </Link>
-            <p className="text-gray-500 text-sm leading-relaxed">
-              Empowering students to solve real-world problems through algorithmic thinking and innovation.
-            </p>
-          </div>
-          
-          <div>
-            <h3 className="font-playfair font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><NavLink to="/about" className="hover:text-icpc-blue">About Us</NavLink></li>
-              <li><NavLink to="/team" className="hover:text-icpc-blue">Our Team</NavLink></li>
-              <li><NavLink to="/events" className="hover:text-icpc-blue">Events</NavLink></li>
-              <li><NavLink to="/contact" className="hover:text-icpc-blue">Contact</NavLink></li>
-            </ul>
-          </div>
+      <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                  <div className="col-span-1 md:col-span-1">
+                      <Link to="/" className="flex items-center gap-2 mb-4">
+                          <img
+                              src="./logo.png"
+                              alt="ICPC Tanta Community"
+                              className="h-12 w-auto object-contain"
+                          />
+                      </Link>
+                      <p className="text-gray-500 text-sm leading-relaxed">
+                          Empowering students to solve real-world problems
+                          through algorithmic thinking and innovation.
+                      </p>
+                  </div>
 
-          <div>
-            <h3 className="font-playfair font-bold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li><NavLink to="/training" className="hover:text-icpc-blue">Level 0 Training</NavLink></li>
-              <li><NavLink to="/training" className="hover:text-icpc-blue">Level 1 Training</NavLink></li>
-              <li><NavLink to="/roadmaps" className="hover:text-icpc-blue">Roadmaps</NavLink></li>
-              <li><a href="#" className="hover:text-icpc-blue">YouTube Channel</a></li>
-            </ul>
-          </div>
+                  <div>
+                      <h3 className="font-playfair font-bold text-lg mb-4">
+                          Quick Links
+                      </h3>
+                      <ul className="space-y-2 text-sm text-gray-600">
+                          <li>
+                              <NavLink
+                                  to="/about"
+                                  className="hover:text-icpc-blue">
+                                  About Us
+                              </NavLink>
+                          </li>
+                          <li>
+                              <NavLink
+                                  to="/team"
+                                  className="hover:text-icpc-blue">
+                                  Our Team
+                              </NavLink>
+                          </li>
+                          <li>
+                              <NavLink
+                                  to="/events"
+                                  className="hover:text-icpc-blue">
+                                  Events
+                              </NavLink>
+                          </li>
+                          <li>
+                              <NavLink
+                                  to="/contact"
+                                  className="hover:text-icpc-blue">
+                                  Contact
+                              </NavLink>
+                          </li>
+                      </ul>
+                  </div>
 
-          <div>
-            <h3 className="font-playfair font-bold text-lg mb-4">Connect</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-50 text-icpc-blue flex items-center justify-center hover:bg-icpc-blue hover:text-white transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-50 text-icpc-blue flex items-center justify-center hover:bg-icpc-blue hover:text-white transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-blue-50 text-icpc-blue flex items-center justify-center hover:bg-icpc-blue hover:text-white transition-colors">
-                <Mail size={20} />
-              </a>
-            </div>
-            <p className="mt-4 text-xs text-gray-400">
-              contact@icpctanta.com <br/>
-              +20 123 456 7890
-            </p>
+                  <div>
+                      <h3 className="font-playfair font-bold text-lg mb-4">
+                          Resources
+                      </h3>
+                      <ul className="space-y-2 text-sm text-gray-600">
+                          <li>
+                              <NavLink
+                                  to="/training"
+                                  className="hover:text-icpc-blue">
+                                  Level 0 Training
+                              </NavLink>
+                          </li>
+                          <li>
+                              <NavLink
+                                  to="/training"
+                                  className="hover:text-icpc-blue">
+                                  Level 1 Training
+                              </NavLink>
+                          </li>
+                          <li>
+                              <NavLink
+                                  to="/roadmaps"
+                                  className="hover:text-icpc-blue">
+                                  Roadmaps
+                              </NavLink>
+                          </li>
+                          <li>
+                              <a href="#" className="hover:text-icpc-blue">
+                                  YouTube Channel
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div>
+                      <h3 className="font-playfair font-bold text-lg mb-4">
+                          Connect
+                      </h3>
+                      <div className="flex space-x-4">
+                          <a
+                              href="http://facebook.com/acm.tanta.community"
+                              target="_blank"
+                              className="w-10 h-10 rounded-full bg-blue-50 text-icpc-blue flex items-center justify-center hover:bg-icpc-blue hover:text-white transition-colors">
+                              <Facebook size={20} />
+                          </a>
+                          <a
+                              href="https://www.linkedin.com/company/106583280/"
+                              target="_blank"
+                              className="w-10 h-10 rounded-full bg-blue-50 text-icpc-blue flex items-center justify-center hover:bg-icpc-blue hover:text-white transition-colors">
+                              <Linkedin size={20} />
+                          </a>
+                          <a
+                              href="mailto:abdulrahman.elhanafy.dev@gmail.com"
+                              className="w-10 h-10 rounded-full bg-blue-50 text-icpc-blue flex items-center justify-center hover:bg-icpc-blue hover:text-white transition-colors">
+                              <Mail size={20} />
+                          </a>
+                      </div>
+                      <p className="mt-4 text-xs text-gray-400">
+                          abdulrahman.elhanafy.dev@gmail.com <br />
+                          01279097962
+                      </p>
+                  </div>
+              </div>
+
+              <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                  <p>&copy; 2025 ICPC Tanta Community. All rights reserved.</p>
+                  <div className="flex space-x-6 mt-4 md:mt-0">
+                      <a href="#" className="hover:text-icpc-blue">
+                          Privacy Policy
+                      </a>
+                      <a href="#" className="hover:text-icpc-blue">
+                          Terms of Service
+                      </a>
+                  </div>
+              </div>
           </div>
-        </div>
-        
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; 2025 ICPC Tanta Community. All rights reserved.</p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-icpc-blue">Privacy Policy</a>
-            <a href="#" className="hover:text-icpc-blue">Terms of Service</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
   );
 };
 
