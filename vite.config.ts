@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
     return {
         base: '/ICPC-Tanta-Community-TEST/',
         build: {
-          outDir: 'docs',
+            outDir: 'docs',
         },
         server: {
             port: 3000,
