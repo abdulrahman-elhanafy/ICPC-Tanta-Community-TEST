@@ -71,15 +71,15 @@ export const Training: React.FC = () => {
                 <h3 className="text-xl font-bold mb-2">Hands-on Coding</h3>
                 <p className="text-gray-400 text-sm md:text-base">Every session includes a practice contest to apply what you learned.</p>
             </Card>
-            <Card className="p-6 md:p-8 bg-icpc-blue text-white">
-                <Cpu className="mb-4 text-white" size={40} />
+            <Card className="p-6 md:p-8 bg-icpc-blue">
+                <Cpu className="text-icpc-blue mb-4" size={40} />
                 <h3 className="text-xl font-bold mb-2">Online Judge</h3>
-                <p className="text-blue-100 text-sm md:text-base">Access our private group on Codeforces for exclusive problem sets.</p>
+                <p className="text-gray-600 text-sm md:text-base">Access our private group on Codeforces for exclusive problem sets.</p>
             </Card>
-            <Card className="p-6 md:p-8 bg-white border border-gray-200">
-                <Video className="mb-4 text-icpc-blue" size={40} />
+            <Card className="p-6 md:p-8 bg-gray border border-gray-200">
+                <Video className="mb-4 text-icpc-yellow" size={40} />
                 <h3 className="text-xl font-bold mb-2">Recorded Sessions</h3>
-                <p className="text-gray-600 text-sm md:text-base">Missed a class? Watch high-quality recordings of all lectures.</p>
+                <p className="text-gray-400 text-sm md:text-base">Missed a class? Watch high-quality recordings of all lectures.</p>
             </Card>
         </div>
 
